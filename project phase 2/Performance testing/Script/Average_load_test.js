@@ -47,4 +47,4 @@ export default function () {
 
   sleep(1); 
 }
-//k6 run Performance_load_test.js to run test
+//k6 run Average_load_test.js to run test
