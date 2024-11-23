@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2024-11-23T13:22:58.041833" rpa="false" schemaversion="5">
+<suite id="s1" name="Post-1" source="C:\Users\Asus\University\3_term_1_2024\Software QA\PJ\ITDS362_Project_2-G7\project phase 2\UI testing\Test-Case-1-Post-1\Post-1.robot">
+<test id="s1-t1" name="Test Login with valid Account" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:22:58.327780" level="INFO">Opening browser 'chrome' to base url 'http://45.136.236.146:8081'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-23T13:22:58.327780" elapsed="2.946907"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.Button--primary</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-23T13:23:01.275785" elapsed="0.015675"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:01.291460" level="INFO">Clicking button 'css:.Button--primary'.</msg>
+<arg>css:.Button--primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:01.291460" elapsed="0.099463"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.Form.Form--centered</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-23T13:23:01.390923" elapsed="0.246293"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:01.637216" level="INFO">Typing text 'G7testS' into text field 'name:identification'.</msg>
+<arg>name:identification</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:01.637216" elapsed="0.153915"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:01.791131" level="INFO">Typing text '12345678' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:01.791131" elapsed="0.106463"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:01.897594" level="INFO">Clicking button 'css:.Button--primary.Button--block'.</msg>
+<arg>css:.Button--primary.Button--block</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:01.897594" elapsed="0.056518"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.Button--user</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-23T13:23:01.954112" elapsed="2.462257"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:04.416369" level="INFO">Verifying element 'css:.username' contains exact text 'G7testS'.</msg>
+<arg>css:.username</arg>
+<arg>G7testS</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-23T13:23:04.416369" elapsed="0.031605"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-23T13:23:04.447974" elapsed="2.149208"/>
+</kw>
+<status status="PASS" start="2024-11-23T13:22:58.327780" elapsed="8.269917"/>
+</test>
+<test id="s1-t2" name="Test Post discussion with valid Account" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:06.597697" level="INFO">Opening browser 'chrome' to base url 'http://45.136.236.146:8081'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-23T13:23:06.597697" elapsed="2.751975"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:09.349672" level="INFO">Clicking button 'css:.Button--primary'.</msg>
+<arg>css:.Button--primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:09.349672" elapsed="0.082007"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.Form.Form--centered</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-23T13:23:09.431679" elapsed="0.236804"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:09.668483" level="INFO">Typing text 'G7testS' into text field 'name:identification'.</msg>
+<arg>name:identification</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:09.668483" elapsed="0.155614"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:09.832186" level="INFO">Typing text '12345678' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:09.824097" elapsed="0.066204"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:09.890301" level="INFO">Clicking button 'css:.Button--primary.Button--block'.</msg>
+<arg>css:.Button--primary.Button--block</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:09.890301" elapsed="0.058316"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.Button--user</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-23T13:23:09.948617" elapsed="1.473020"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:11.421637" level="INFO">Verifying element 'css:.username' contains exact text 'G7testS'.</msg>
+<arg>css:.username</arg>
+<arg>G7testS</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-23T13:23:11.421637" elapsed="0.024763"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:11.454345" level="INFO">Clicking button 'css:.Button--primary.IndexPage-newDiscussion'.</msg>
+<arg>css:.Button--primary.IndexPage-newDiscussion</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:11.454345" elapsed="0.130182"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.Composer-content</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-23T13:23:11.584527" elapsed="0.016531"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.FormControl</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-23T13:23:11.601058" elapsed="0.019812"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:11.620870" level="INFO">Typing text 'Group7TestThis' into text field 'xpath://input[@placeholder='Discussion Title']'.</msg>
+<arg>xpath://input[@placeholder='Discussion Title']</arg>
+<arg>${HEADER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:11.620870" elapsed="0.143052"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:11.763922" level="INFO">Typing text 'This is test fr' into text field 'css:.Composer-flexible.TextEditor-editor'.</msg>
+<arg>css:.Composer-flexible.TextEditor-editor</arg>
+<arg>This is test fr</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:11.763922" elapsed="0.081323"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:11.845245" level="INFO">Clicking element 'css:.item-submit.App-primaryControl'.</msg>
+<arg>css:.item-submit.App-primaryControl</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:11.845245" elapsed="0.088656"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.TagDiscussionModal-list.SelectTagList</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-23T13:23:11.933901" elapsed="1.290020"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:13.232040" level="INFO">Clicking element 'xpath://ul[@class='TagDiscussionModal-list SelectTagList']/li[span[text()='General']]'.</msg>
+<arg>xpath://ul[@class='TagDiscussionModal-list SelectTagList']/li[span[text()='General']]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:13.232040" elapsed="0.056526"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://li[@class='pinned colored selected active']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-23T13:23:13.288566" elapsed="0.016806"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>xpath://button[@class='Button Button--primary hasIcon disabled']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2024-11-23T13:23:13.312877" elapsed="0.008010"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:13.320887" level="INFO">Clicking element 'xpath://button[@class='Button Button--primary hasIcon']/span[text()='OK']'.</msg>
+<arg>xpath://button[@class='Button Button--primary hasIcon']/span[text()='OK']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:13.320887" elapsed="0.109223"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>css:.DiscussionListItem-title</arg>
+<arg>${HEADER}</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-11-23T13:23:13.430110" elapsed="0.031892"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-23T13:23:13.462002" level="INFO">Clicking element 'xpath://h3[text()='Group7TestThis']'.</msg>
+<arg>xpath://h3[text()='${HEADER}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T13:23:13.462002" elapsed="0.382625"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-23T13:23:13.844627" elapsed="2.129518"/>
+</kw>
+<status status="PASS" start="2024-11-23T13:23:06.597697" elapsed="9.378060"/>
+</test>
+<status status="PASS" start="2024-11-23T13:22:58.041833" elapsed="17.933924"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Post-1">Post-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
