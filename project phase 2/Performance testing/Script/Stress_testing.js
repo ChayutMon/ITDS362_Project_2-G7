@@ -12,6 +12,14 @@ export let options = {
 };
 
 export default function () {
+  // ทดสอบ Endpoint หลัก
+  let mainRes = http.get('http://45.136.236.146:8081/');
+  check(mainRes, {
+    'Main page status is 200': (r) => r.status === 200,
+    'Main page response time < 200ms': (r) => r.timings.duration < 200,
+  });
+
+
   // ทดสอบ /t/general
   let generalRes = http.get('http://45.136.236.146:8081/t/general');
   check(generalRes, {
@@ -19,12 +27,6 @@ export default function () {
     '/t/general response time < 200': (r) => r.timings.duration < 200,
   });
 
-  // ทดสอบ Endpoint หลัก
-  let mainRes = http.get('http://45.136.236.146:8081/');
-  check(mainRes, {
-    'Main page status is 200': (r) => r.status === 200,
-    'Main page response time < 200ms': (r) => r.timings.duration < 200,
-  });
 
   // ทดสอบ /t/general?sort=top
   let sortTopRes = http.get('http://45.136.236.146:8081/t/general?sort=top');
@@ -49,4 +51,3 @@ export default function () {
 
   sleep(1); 
 }
-//k6 run Stress_testing.js to run test
