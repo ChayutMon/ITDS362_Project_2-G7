@@ -2,7 +2,6 @@
 
 
 
-# 1. System Testing
 
 
 
@@ -14,7 +13,8 @@
 
 
 
-# 2. UI Testing
+
+#  UI Testing
 
 
 
@@ -333,7 +333,7 @@ def tearDownClass(cls):
 
 
 
-# 3. Performance Testing
+# Performance Testing
 
 
 
