@@ -181,7 +181,7 @@ Click login
 
 
 
-Automated UI Testing: Sign up Testing
+# Automated UI Testing: Sign up Testing
 
 ***
 UI Testing นี้ประกอบด้วยสคริปต์การทดสอบอัตโนมัติสำหรับทดสอบฟังก์ชันการลงทะเบียน (signup) ของเว็บแอปพลิเคชัน 
