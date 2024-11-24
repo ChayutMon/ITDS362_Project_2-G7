@@ -306,7 +306,7 @@ def _fill_form(self, field_name, value):
 กรอกข้อมูลใหม่ลงไป
 จัดการข้อผิดพลาดที่อาจเกิดขึ้น        
 
-ุ## 6. Teardown
+## 6. Teardown
 
 @classmethod
 def tearDownClass(cls):
