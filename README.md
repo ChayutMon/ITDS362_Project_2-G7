@@ -41,7 +41,7 @@ Click login
 
 เข้าสู่ระบบไม่สำเร็จ
 
-Test Login with Incorrect Email & Password input
+## Test Login with Incorrect Email & Password input
 
 Status: Pass
 ระยะเวลารวมในการทดสอบ: 10.011 วินาที Keyword ที่ใช้งาน:
@@ -62,7 +62,7 @@ Click login
 
 เข้าสู่ระบบไม่สำเร็จ
 
-Test Login with Correct Username & Incorrect password input
+## Test Login with Correct Username & Incorrect password input
 
 Status: Pass
 ระยะเวลารวมในการทดสอบ: 9.955 วินาที Keyword ที่ใช้งาน:
@@ -83,7 +83,7 @@ Click login
 
 เข้าสู่ระบบไม่สำเร็จ
 
-Test Login with Correct Email & Incorrect password input
+## Test Login with Correct Email & Incorrect password input
 
 Status: Pass
 ระยะเวลารวมในการทดสอบ: 9.988 วินาที Keyword ที่ใช้งาน:
@@ -104,7 +104,7 @@ Click login
 
 เข้าสู่ระบบไม่สำเร็จ
 
-Test Login with Incorrect Email & Incorrect password input
+## Test Login with Incorrect Email & Incorrect password input
 
 Status: Pass
 ระยะเวลารวมในการทดสอบ: 9.953 วินาที Keyword ที่ใช้งาน:
@@ -150,7 +150,7 @@ Click login
 
 เข้าสู่ระบบสำเร็จ
 
-Test Post discussion with valid account
+## Test Post discussion with valid account
 
 Status: Pass
 ระยะเวลาในการทดสอบ: 9.378 วินาที Keyword ที่ใช้งาน:
@@ -222,7 +222,7 @@ Test Result - Fail: No success message detected
 
 อธิบายองค์ประกอบต่างๆของ Code เบื้องต้น
 
-1. Import Libraries และการตั้งค่าเบื้องต้น
+## 1. Import Libraries และการตั้งค่าเบื้องต้น
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -236,7 +236,7 @@ from selenium.webdriver.edge.options import Options
 - WebDriverWait และ EC ใช้สำหรับการรอให้ elements ปรากฏบนหน้าเว็บ
 - Options ใช้สำหรับกำหนดค่าต่างๆของเบราว์เซอร์
 
-2. Class setup
+## 2. Class setup
 
 @classmethod
 def setUpClass(cls):
@@ -251,7 +251,7 @@ def setUpClass(cls):
 - กำหนดให้เบราว์เซอร์เปิดแบบเต็มจอ
 - สร้างตัวแปร wait ที่จะรอการโหลดเพจนานสูงสุด 20 วินาที
 
-3. Data Setup
+## 3. Data Setup
 
 def setUp(self):
     self.test_data = {
@@ -265,7 +265,7 @@ def setUp(self):
 เก็บค่า URL, username, email และ password
 จะทำงานก่อนการทดสอบแต่ละครั้ง
 
-4. Test case หลัก
+## 4. Test case หลัก
 
 def test_signup_positive(self):
     # ขั้นตอนที่ 1: คลิกปุ่ม Sign Up
@@ -289,7 +289,7 @@ def test_signup_positive(self):
 มีการรอหน้า browser จนกว่าจะเเสดง UI ต่างๆก่อนเเละกด Sign up
 กรอกข้อมูลในฟอร์มทั้งหมดเเละส่งฟอร์มเพื่อทำการสมัครสมาชิก
 
-5. Fill Help 
+## 5. Fill Help 
 
 def _fill_form(self, field_name, value):
     try:
@@ -306,7 +306,7 @@ def _fill_form(self, field_name, value):
 กรอกข้อมูลใหม่ลงไป
 จัดการข้อผิดพลาดที่อาจเกิดขึ้น        
 
-ุ6. Teardown
+ุ## 6. Teardown
 
 @classmethod
 def tearDownClass(cls):
